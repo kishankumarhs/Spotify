@@ -1,13 +1,13 @@
-import express from 'express';
+import express from 'express'
 import dotenv from 'dotenv'
 
 dotenv.config()
 const PORT = process.env.PORT || 4000
-const server = express();
+const server = express()
 server.listen(PORT, () => {
-    console.log(`The Server Is Running At ${PORT}`)
+    console.log(`server is running at ${PORT}`)
 })
 
-server.get("/", (req, res) => {
-    res.send("Welcome to Spotify Clone")
+server.get('/', (req, res) => {
+    res.send("Hello this is Spotify clone")
 })
