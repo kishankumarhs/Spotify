@@ -1,0 +1,23 @@
+.navbar {
+  flex: 0.25;
+  color: var(--color);
+  min-height: 100vh;
+}
+
+.navigation {
+  margin: 0.6rem;
+  background: #121212;
+  border-radius: 0.162rem;
+  -webkit-border-radius: 0.162rem;
+  -moz-border-radius: 0.162rem;
+  -ms-border-radius: 0.162rem;
+  -o-border-radius: 0.162rem;
+  padding: 5px;
+}
+.nav-list {
+  list-style: none;
+}
+
+.nav-list .nav-items {
+  padding: 10px;
+}
