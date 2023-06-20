@@ -1,0 +1,134 @@
+.navbar {
+  flex: 0.25;
+  color: var(--color);
+  max-height: 100vh;
+}
+
+.navigation,
+.your-library {
+  margin: 0.6rem;
+  background: #121212;
+  border-radius: 0.162rem;
+  -webkit-border-radius: 0.162rem;
+  -moz-border-radius: 0.162rem;
+  -ms-border-radius: 0.162rem;
+  -o-border-radius: 0.162rem;
+  padding: 5px;
+}
+.nav-list {
+  list-style: none;
+}
+
+.nav-list .nav-items {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-items span,
+.library-top span {
+  font-size: 16px;
+  padding: 0 8px;
+}
+
+.your-library {
+  height: auto;
+}
+
+.library-top {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background: #121212;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+.create-playlist-container {
+  max-height: 250px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+.create-playlist,
+.find-podcast {
+  background: #2d2c2c;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin: 15px auto;
+}
+.playlist-head,
+.podcast-head {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.podcast-desc,
+.playlist-desc {
+  font-size: 14px;
+  margin: 15px 0;
+  font-weight: 300;
+}
+
+.find-podcast button,
+.create-playlist button {
+  background: #fff;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  font-weight: 500;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  width: 60%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.find-podcast button:hover,
+.create-playlist button:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.navbar-footer {
+  height: 100%;
+}
+.nav-footer-links {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-footer-link {
+  text-transform: capitalize;
+  font-size: 13px;
+  color: #aaa;
+  margin: 10px 15px;
+  font-weight: 300;
+}
+.nav-footer-button {
+  background: transparent;
+  border: solid 1.2px #fff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 14px;
+  margin: 10px 15px;
+  cursor: pointer;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.nav-footer-button:hover {
+  outline: solid 1px #fff;
+}

@@ -1,0 +1,3 @@
+visited to /getUser by this POST 
+visited to /getUser by this GET 
+visited to / by this GET 
