@@ -1,0 +1,33 @@
+.home {
+  background: linear-gradient(#1f1e1e 1%, #0000 90%);
+  height: 100vh;
+  overflow-x: scroll;
+  padding-top: 3.5rem;
+}
+.section-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.section-head {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+.show-all {
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: lowercase;
+  color: #818181;
+}
+.show-all:hover {
+  text-decoration: underline;
+}
+.song-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3rem;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}

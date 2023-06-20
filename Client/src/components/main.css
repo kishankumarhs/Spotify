@@ -4,11 +4,15 @@
   flex: 0.75;
 }
 .main-top {
+  position: fixed;
+  z-index: 9999;
+  width: 73vw;
+  top: 10px;
   display: flex;
-  background: #121212;
+  background: rgba(18, 18, 18, 0.8);
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10px;
+  padding: 10px;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 .navigation-arrows {
