@@ -1,0 +1,7 @@
+.song-listing {
+  display: flex;
+  margin: 2rem 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}

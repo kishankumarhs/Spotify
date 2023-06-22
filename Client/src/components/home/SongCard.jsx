@@ -11,7 +11,7 @@ const SongCard = () => {
                 }} />
             </div>
             <div className="song-card-image-holder">
-                <img src="https://i.scdn.co/image/ab67706f000000024a7b7b828b33d4ba83a63a27" alt="" />
+                <img src="https://i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6" alt="" />
             </div>
             <div className="song-card-info">
                 <p className="song-card-title">

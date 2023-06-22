@@ -12,7 +12,7 @@
   transition: all ease-in-out 300ms;
 }
 .song-card-image-holder {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   border-radius: 5px;
   -webkit-border-radius: 5px;

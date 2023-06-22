@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom"
 import { RightOutlined, LeftOutlined } from '@ant-design/icons'
 import './main.css'
+import Footer from "./global/Footer"
 
 const Main = () => {
     return (
@@ -20,6 +21,7 @@ const Main = () => {
                 </div>
             </div>
             <Outlet />
+            <Footer />
         </div>
 
     )
