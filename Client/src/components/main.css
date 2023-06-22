@@ -1,12 +1,12 @@
 .main {
   margin: 0.6rem;
   border-radius: 0.162rem;
-  flex: 0.75;
+  flex: 0.8;
 }
 .main-top {
-  position: fixed;
+  position: sticky;
   z-index: 9999;
-  width: 73vw;
+  width: inherit;
   top: 10px;
   display: flex;
   background: rgba(18, 18, 18, 0.8);

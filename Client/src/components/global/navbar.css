@@ -1,5 +1,5 @@
 .navbar {
-  flex: 0.25;
+  flex: 0.2;
   color: var(--color);
   max-height: 100vh;
 }
@@ -33,7 +33,7 @@
 }
 
 .your-library {
-  height: auto;
+  height: 100%;
 }
 
 .library-top {
@@ -44,7 +44,7 @@
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 .create-playlist-container {
-  max-height: 250px;
+  max-height: 300px;
   overflow-y: scroll;
   padding: 10px;
 }
@@ -85,7 +85,7 @@
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   cursor: pointer;
 }
