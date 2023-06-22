@@ -1,0 +1,4 @@
+.layout-wraper{
+    display: flex;
+    flex-direction: row;
+}

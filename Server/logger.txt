@@ -1,0 +1,4 @@
+visited to url /getUser from the POST method 
+visited to url / from the GET method 
+visited to url /getUser from the GET method 
+visited to url /getUser from the POST method 

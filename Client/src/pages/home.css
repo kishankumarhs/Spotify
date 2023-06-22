@@ -1,0 +1,6 @@
+.main{
+    background: linear-gradient(#1f1e1e 1%, #0000 90%);
+    height: 100vh;
+    padding-top: 3.5rem;
+    overflow-x: scroll;
+}
