@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom"
 import SongCard from "../components/home/SongCard"
 import "./home.css"
 const Home = () => {
@@ -9,7 +10,7 @@ const Home = () => {
                     <p className="section-head">
                         Focus
                     </p>
-                    <a href="/" className="show-all">Show all</a>
+                    <Link to='/song-listing' className="show-all">Show all</Link>
                 </div>
                 <div className="song-card-container">
                     {
@@ -22,7 +23,8 @@ const Home = () => {
                     <p className="section-head">
                         Spotify Playlist
                     </p>
-                    <a href="/" className="show-all">Show all</a>
+                    <Link to='/song-listing' className="show-all">Show all</Link>
+
                 </div>
                 <div className="song-card-container">
                     {
@@ -35,7 +37,8 @@ const Home = () => {
                     <p className="section-head">
                         Spotify Playlist
                     </p>
-                    <a href="/" className="show-all">Show all</a>
+                    <Link to='/song-listing' className="show-all">Show all</Link>
+
                 </div>
                 <div className="song-card-container">
                     {

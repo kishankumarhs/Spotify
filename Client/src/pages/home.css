@@ -1,8 +1,5 @@
 .home {
-  background: linear-gradient(#1f1e1e 1%, #0000 90%);
-  height: 100vh;
-  overflow-x: scroll;
-  padding-top: 3.5rem;
+  padding: 0 10px;
 }
 .section-top {
   display: flex;
@@ -27,7 +24,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.3rem;
   flex-wrap: wrap;
   column-gap: 10px;
 }

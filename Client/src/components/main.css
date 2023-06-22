@@ -1,13 +1,16 @@
 .main {
   margin: 0.6rem;
+  background: linear-gradient(#1f1e1e 1%, #0000 90%);
   border-radius: 0.162rem;
-  flex: 0.75;
+  flex: 0.8;
+  height: 100vh;
+  overflow-x: scroll;
 }
 .main-top {
-  position: fixed;
+  position: sticky;
   z-index: 9999;
-  width: 73vw;
-  top: 10px;
+  width: inherit;
+  top: 0;
   display: flex;
   background: rgba(18, 18, 18, 0.8);
   justify-content: space-between;
