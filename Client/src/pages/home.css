@@ -1,6 +1,45 @@
-.main{
-    background: linear-gradient(#1f1e1e 1%, #0000 90%);
+.home{
+    background: linear-gradient(#1f1e1e 1%, #000000 90%);
     height: 100vh;
     padding-top: 3.5rem;
     overflow-x: scroll;
+    
 }
+
+.section-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.section-head{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.show-all{
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 14px;
+    color: #818181;
+}
+.show-all:hover{
+    text-decoration: underline;
+}
+.song-card-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.3rem;
+    column-gap: 10px;
+}
+.home::-webkit-scrollbar{
+    width: 10px;
+}
+
+ .home::-webkit-scrollbar-thumb {
+    background: #888; 
+  } 
+  .home::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

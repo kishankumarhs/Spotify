@@ -6,12 +6,12 @@
 .navigation, .your-library-container{
     margin: 0.6rem;
     background: #121212;
-    border-radius: 0.162rem;
+    border-radius: 0.5rem;
     padding: 5px;
-    -webkit-border-radius: 0.162rem;
-    -moz-border-radius: 0.162rem;
-    -ms-border-radius: 0.162rem;
-    -o-border-radius: 0.162rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
 }
 .nav-list{
     list-style-type: none;
@@ -45,8 +45,24 @@
 .library-middle-setion{
     max-height: 250px;
     padding: 10px;
-
+    overflow: hidden;
+   
+}
+.library-middle-setion:hover{
     overflow-y: scroll;
+}
+.library-middle-setion::-webkit-scrollbar{
+    width: 10px;
+}
+.library-middle-setion::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    background: #888; 
+} 
+.library-middle-setion::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.library-middle-setion::-webkit-scrollbar {
+    display: block;
 }
 .create-playlist-container, 
 .create-podcast-container{
