@@ -5,6 +5,7 @@ import { Suspense, lazy } from 'react'
 const HomePage = lazy(() => import('./pages/Home'))
 const PageLayout = lazy(() => import("./components/global/Layout"))
 const SongListingPage = lazy(() => import("./pages/SongListing"))
+const SongDetailsPage = lazy(() => import('./pages/SongDetails'))
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
           </Suspense>
         }>
           <Route path='/' element={<Suspense fallback="Loading..."><HomePage /></Suspense>} />
-          <Route path='/song-listing' element={<Suspense fallback="Loading..."><SongListingPage /></Suspense>} />
+          <Route path='/song-listing' element={<Suspense fallback="Loading..."><SongListingPage /></Suspense>}
+          />
+          <Route path='/song-details' element={<Suspense fallback="Loading..."><SongDetailsPage /></Suspense>} />
         </Route>
       </Routes>
     </Router>
