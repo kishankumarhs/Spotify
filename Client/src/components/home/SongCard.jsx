@@ -7,7 +7,7 @@ const SongCard = () => {
             <div className="play-button">
                 <PlayCircleFilled style={{
                     fontSize: 40,
-                    color: "#089e1e"
+                    color: "#1BD760"
 
                 }}/>
             </div>

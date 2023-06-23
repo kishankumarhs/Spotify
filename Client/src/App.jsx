@@ -4,16 +4,14 @@ import { Suspense, lazy } from 'react'
 
 const HomePage = lazy(() => import('./pages/Home'))
 const PageLayout = lazy(() => import("./components/global/Layout"))
+const SongListingPage = lazy(() => import("./pages/SongListing"))
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={
-          <Suspense>
-            <PageLayout />
-          </Suspense>
-        }>
-          <Route path='/' element={<Suspense fallback="Loading..."><HomePage /></Suspense>} />
+        <Route path="/" element={<Suspense><PageLayout /></Suspense>}>
+          <Route path='/' element={<Suspense><HomePage /></Suspense>} />
+          <Route path='/song-listing' element={<Suspense><SongListingPage /></Suspense>} />
         </Route>
       </Routes>
     </Router>

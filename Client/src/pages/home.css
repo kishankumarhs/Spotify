@@ -1,9 +1,6 @@
 .home{
-    background: linear-gradient(#1f1e1e 1%, #000000 90%);
-    height: 100vh;
-    padding-top: 3.5rem;
-    overflow-x: scroll;
     
+    padding: 0 10px;
 }
 
 .section-top{
@@ -12,14 +9,19 @@
     padding: 10px;
 }
 .section-head{
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 700;
     color: #fff;
+    cursor: pointer;
 }
+.section-head:hover{
+    text-decoration: underline;
+}
+
 .show-all{
     text-decoration: none;
-    text-transform: lowercase;
-    font-size: 14px;
+    font-weight: 800;
+    font-size: 15px;
     color: #818181;
 }
 .show-all:hover{
@@ -31,15 +33,5 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 1.3rem;
-    column-gap: 10px;
+    column-gap: 16px;
 }
-.home::-webkit-scrollbar{
-    width: 10px;
-}
-
- .home::-webkit-scrollbar-thumb {
-    background: #888; 
-  } 
-  .home::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }

@@ -7,27 +7,32 @@ const Navbar = () => {
         <div className="navbar">
             <div className="navigation">
                 <ul className="nav-list">
-                    <li className="li nav-items">
+                    <li className="nav-items">
                         <HomeFilled />
                         <span>Home</span>
                     </li>
-                    <li className="li nav-items">
+                    <li className="nav-items search">
                         <SearchOutlined />
                         <span>Search</span>
                     </li>
                 </ul>
             </div>
             <div className="your-library-container">
-                <div className="library-top-section">
-                    <AppstoreAddOutlined style={
-                        {fontSize:"20"}
-                    }/>
+                <div className="library-top-section ">
+                    
+                        <AppstoreAddOutlined style={
+                            {fontSize:"20"}
+                        }/>
                     <span>your library</span>
-                    <IconButton style={{
-                        marginLeft: "auto"
-                    }}>
-                    <PlusOutlined style={{ color: "#fff" }} />
-                    </IconButton>
+                    
+                    
+                        <IconButton style={{
+                            marginLeft: "auto"
+                        }}>
+                            <PlusOutlined style={{ color: "#fff" }} />
+                        </IconButton>
+                    
+                    
                 </div>
                 <div className="library-middle-setion">
                     <div className="create-playlist-container">

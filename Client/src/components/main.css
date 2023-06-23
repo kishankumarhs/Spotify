@@ -1,24 +1,29 @@
 .main{
     margin: 0.6rem 0.1rem;
-    flex: 0.75;
-    border-radius:1rem!important;
-    -webkit-border-radius:1rem!important;
-    -moz-border-radius:1rem!important;
-    -ms-border-radius:1rem!important;
-    -o-border-radius:1rem!important;
+    border-radius: 0.5rem;
+    flex: 0.8;
+    background: linear-gradient(#1f1e1e 1%, #0000 90%);
+    overflow-x: scroll;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    height: 100vh;
+    
+    
 }
 .main-top{
-    position: fixed;
+    position: sticky;
     z-index: 9999;
-    
-    width: 72.8vw;
-    background: rgba(18, 18, 18, 0.8);
-    top: 9px;
+    width: inherit;
+    top: 0;
     display: flex;
+    background: rgba(18, 18, 18, 0.8);
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        
 }
 .navigation-arrows{
     display: flex;
@@ -46,11 +51,11 @@
 .log-in-button{
     border: 0;
     outline: 0;
-    text-transform: capitalize;
-    font-size: 16px;
+    
+    font-size: 14px;
     background: transparent;
     color: #aaa;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
 
 }
@@ -64,11 +69,25 @@
 }
 .log-in-button{
     background: #fff;
-    color: #000;
+    color: #00000a;
     padding: 10px 20px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+    
+}
+.sign-up-button:hover{
+    color: #fff;
+    
+}
+.main::-webkit-scrollbar{
+    width: 10px;
+}
+.main::-webkit-scrollbar-thumb {
+background: #888; 
+} 
+.main::-webkit-scrollbar-thumb:hover {
+background: #555; 
 }
