@@ -71,13 +71,21 @@
 }
 .library-middle-setion::-webkit-scrollbar-thumb {
     background-clip: content-box;
-    background: #888; 
+    background: #888;
+    transition: all ease-in-out 300ms;
+    -webkit-transition: all ease-in-out 300ms;
+    -moz-transition: all ease-in-out 300ms;
+    -ms-transition: all ease-in-out 300ms;
+    -o-transition: all ease-in-out 300ms;
 } 
 .library-middle-setion::-webkit-scrollbar-thumb:hover {
     background: #555; 
+    
+
 }
 .library-middle-setion::-webkit-scrollbar {
     display: block;
+    
 }
 .create-playlist-container, 
 .create-podcast-container{
@@ -91,7 +99,7 @@
     margin: 15px auto;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
-.playlist-head,
+.playlist-head-text,
 .podcast-head{
     font-size: 16px;
     font-weight: 600;

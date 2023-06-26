@@ -87,6 +87,11 @@
 }
 .main::-webkit-scrollbar-thumb {
 background: #888; 
+transition: all ease-in-out 5000ms;
+  -webkit-transition: all ease-in-out 5000ms;
+  -moz-transition: all ease-in-out 5000ms;
+  -ms-transition: all ease-in-out 5000ms;
+  -o-transition: all ease-in-out 5000ms;
 } 
 .main::-webkit-scrollbar-thumb:hover {
 background: #555; 

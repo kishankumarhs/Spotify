@@ -36,7 +36,7 @@ const Navbar = () => {
                 </div>
                 <div className="library-middle-setion">
                     <div className="create-playlist-container">
-                        <p className="playlist-head">Create your first playlist</p>
+                        <p className="playlist-head-text">Create your first playlist</p>
                         <p className="playlist-desc">It's easy, we'll help you</p>
                         <button>Create playlist</button>
                     </div>
