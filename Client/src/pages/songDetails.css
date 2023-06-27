@@ -36,7 +36,6 @@
     font-size: 14px;
     font-weight: 300;
     margin: 15px 0;
-    
 }
 .likes-and-songs-container{
     display: flex;
@@ -64,7 +63,6 @@
     text-decoration: none;
     padding-top: 0.2rem;
   }
-
 .playlist-likes{
     color: #fff;
     font-size: 14px;
@@ -75,10 +73,9 @@
     font-size: 14px;
     font-weight: 500;
 }
-
 .playlist-bottom-container{
-    background: linear-gradient(#35393f 1%, #0000 90%);
-    padding: 1.3rem;
+    background: linear-gradient(#35393f 1%, #0000);
+    padding: 1.5rem 1.5rem;
 }
 .playlist-icons-container{
     display: flex;
@@ -92,9 +89,41 @@
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
+.heart-oulined-icon,
+.elipises-outlined-icon{
+    color: #aaa;
+    font-size: 35px;
+
+}
 .heart-oulined-icon:hover,
 .elipises-outlined-icon:hover{
     color: #fff;
 }
-
-    
+.playlist-songs-and-album-head-container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    padding-right: 2.7rem;
+    color: #aaa;
+    font-size: 15px;
+}
+.hash-and-title-head{
+    display: flex;
+    flex-grow: 0.15;
+}
+.hash-head{
+    padding: 0 14px;
+}
+.hr-line{
+    height: 1px;
+    border: none;
+    color: #505050;
+    background-color: #505050;
+    margin-bottom: 1rem;
+}
+.album-card-container{
+    counter-reset: item;
+    list-style-type: none;
+}

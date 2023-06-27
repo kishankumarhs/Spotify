@@ -1,0 +1,45 @@
+.album-list-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 2.7rem;
+    text-transform: capitalize;
+    font-size: 14px;
+    cursor: pointer;
+    color: #aaa;
+}
+.album-image-and-title{
+    display: flex;
+    padding-left: 0;
+}
+.album-image{
+    width: 40px;
+    height: 40px;
+    padding-right: 0.5rem;
+}
+.album-title-container{
+    line-height: 1.5;
+}
+.album-title-desc{
+    color: #fff;
+}
+.album-name{
+    position: inherit;
+    padding-left: 4.5rem;
+    padding-top: 1rem;
+}
+.album-date-added{
+    padding-right: 8.4rem;
+    padding-top: 1rem;
+}
+.album-time-container{
+    display: flex;
+    padding-top: 1rem;
+}
+.album-heart-icon,
+.album-ellipsis-icon{
+    display: none;
+}
+.album-list-container:hover{
+    background: #464646;
+    color: #fff;
+}

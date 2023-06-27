@@ -1,5 +1,5 @@
-import { PlayCircleFilled,HeartOutlined ,EllipsisOutlined} from "@ant-design/icons"
-
+import { PlayCircleFilled,HeartOutlined ,EllipsisOutlined, ClockCircleOutlined} from "@ant-design/icons"
+import AlbumCard from "../components/home/AlbumCard"
 import "./songDetails.css"
 
 const SongDetails = () => {
@@ -39,21 +39,28 @@ const SongDetails = () => {
                             }}/>
                         
                     </div>
-                    <div className="heart-oulined-icon">
-                        <HeartOutlined 
-                            style={{
-                                fontSize: 35,
-                                color: "#aaa"
-                                }} />
+                    <div>
+                        <HeartOutlined  className="heart-oulined-icon"/>
                     </div>
-                    <div className="elipises-outlined-icon">
-                        <EllipsisOutlined 
-                            style={{
-                                fontSize: 35,
-                                color: "#aaa"
-                                }}/>
+                    <div>
+                        <EllipsisOutlined  className="elipises-outlined-icon"/>
                     </div>
                 </div>
+                <div className="playlist-songs-and-album-head-container">
+                    <div className="hash-and-title-head">
+                        <p className="hash-head">#</p>
+                        <p className="title-head">Title</p>
+                    </div>
+                    <p className="album-head">Album</p>
+                    <p className="date-added-head">Date added</p>
+                    <ClockCircleOutlined className="clock-icon"/>
+                </div>
+                <hr className="hr-line"/>
+                    <ol className="album-card-container">
+                        {
+                            [1, 2, 3, 4, 5, 6, 7,1, 1, 1,2,3,45].map(ele => <AlbumCard key={ele} />)
+                        }
+                    </ol>
             </div>
         </div>
     )
