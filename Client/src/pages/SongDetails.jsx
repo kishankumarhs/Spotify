@@ -1,4 +1,5 @@
 import './songdetails.css'
+import SongList from '../components/songs/SongList'
 
 const SongDetails = () => {
     return (
@@ -28,6 +29,7 @@ const SongDetails = () => {
                     </div>
                 </div>
             </div>
+            <SongList />
         </div>
     )
 }
