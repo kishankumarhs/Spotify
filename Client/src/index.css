@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
 :root {
   --font-family: "Overpass", Arial, sans;
   --bg-color: #101010;
@@ -16,4 +16,7 @@ body {
   color: var(--color);
   position: fixed;
   inset: 0;
+}
+::-webkit-scrollbar {
+  display: none;
 }
