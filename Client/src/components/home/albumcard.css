@@ -1,45 +1,90 @@
 .album-list-container{
+    
     display: flex;
-    justify-content: space-between;
-    padding: 0.7rem 2.7rem;
+    font-weight: 400;
+    padding-left: 0.5rem;
     text-transform: capitalize;
-    font-size: 14px;
+    font-size: 13px;
     cursor: pointer;
-    color: #aaa;
+    color: #c3c4c6;
+    align-items: center;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    padding-right: 0;
+    
 }
 .album-image-and-title{
     display: flex;
-    padding-left: 0;
+    align-items: center;
+    gap: 10px;
+    flex: 0.4;
 }
+
 .album-image{
-    width: 40px;
-    height: 40px;
-    padding-right: 0.5rem;
+    display: grid;
+    place-items: center;
+    flex: 0.45;
+    
+}
+.album-image img{
+    width: 65%;
+    object-fit: contain;
+    
 }
 .album-title-container{
     line-height: 1.5;
 }
 .album-title-desc{
     color: #fff;
+    flex: 0.84;
+    font-size: 14px;
+}
+.album-title-desc:hover,
+.album-author:hover,
+.album-name:hover{
+    text-decoration: underline;
+}
+.album-author{
+    font-size: 13px;
 }
 .album-name{
-    position: inherit;
-    padding-left: 4.5rem;
-    padding-top: 1rem;
+    flex: 0.4;
 }
 .album-date-added{
-    padding-right: 8.4rem;
-    padding-top: 1rem;
+    flex: 0.4;
 }
 .album-time-container{
     display: flex;
-    padding-top: 1rem;
+    
 }
-.album-heart-icon,
-.album-ellipsis-icon{
-    display: none;
+.serial-no{
+    flex: 0.025;
 }
+.album-time{
+    flex: 0.05;
+}
+
 .album-list-container:hover{
-    background: #464646;
+    background: #313133;
     color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.album-date-added{
+    display: flex;
+    align-items: center;
+}
+.hidden-icons{
+    margin-left: auto;
+    margin-right: 6%;
+}
+.album-time-container{
+    flex: 0.1;
+}
+.hidden-ellipsis-icon{
+   margin-left: 10%;
+    
 }

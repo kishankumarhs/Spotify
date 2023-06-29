@@ -1,4 +1,5 @@
 import { PlayCircleFilled,HeartOutlined ,EllipsisOutlined, ClockCircleOutlined} from "@ant-design/icons"
+import { Tooltip } from 'react-tooltip'
 import AlbumCard from "../components/home/AlbumCard"
 import "./songDetails.css"
 
@@ -40,10 +41,17 @@ const SongDetails = () => {
                         
                     </div>
                     <div>
-                        <HeartOutlined  className="heart-oulined-icon"/>
+                    <a className="my-anchor-element1"><HeartOutlined  className="heart-oulined-icon"/></a>
+                    <Tooltip anchorSelect=".my-anchor-element1" place="top" tipPointerPosition="middle">
+                        Save to Your Library
+                    </Tooltip>   
                     </div>
                     <div>
-                        <EllipsisOutlined  className="elipises-outlined-icon"/>
+                        <a className="my-anchor-element2"><EllipsisOutlined  className="elipises-outlined-icon"/></a>
+                        <Tooltip anchorSelect=".my-anchor-element2" place="top" tipPointerPosition="middle">
+                            More Options for Peaceful Piano
+                        </Tooltip> 
+                        
                     </div>
                 </div>
                 <div className="playlist-songs-and-album-head-container">

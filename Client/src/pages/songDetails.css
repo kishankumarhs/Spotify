@@ -74,13 +74,14 @@
     font-weight: 500;
 }
 .playlist-bottom-container{
-    background: linear-gradient(#35393f 1%, #0000);
-    padding: 1.5rem 1.5rem;
+    background: linear-gradient(rgba(0, 0, 0, 0), #000);
+    padding: 1.5rem;
 }
 .playlist-icons-container{
     display: flex;
     column-gap: 1.5rem;
     align-items: center;
+    margin-bottom: 1.5rem;
 }
 .playlist-play-icon:hover{
     transform: scale(1.1);
@@ -92,29 +93,44 @@
 .heart-oulined-icon,
 .elipises-outlined-icon{
     color: #aaa;
-    font-size: 35px;
+    font-size: 30px;
 
 }
 .heart-oulined-icon:hover,
 .elipises-outlined-icon:hover{
     color: #fff;
 }
+
 .playlist-songs-and-album-head-container{
+    position: sticky;
+    top: 60px;
+    z-index: 9999;
     display: flex;
-    justify-content: space-between;
     padding-left: 0.5rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 0.5rem;
-    padding-right: 2.7rem;
-    color: #aaa;
+    color: #b1b1b1;
     font-size: 15px;
+    padding-right: 1.2rem;
+    
 }
 .hash-and-title-head{
+    flex: 0.4;
     display: flex;
-    flex-grow: 0.15;
+}
+
+.album-head{
+    flex: 0.375;
+}
+.date-added-head{
+    flex: 0.35;
 }
 .hash-head{
-    padding: 0 14px;
+    flex: 0.1;
+    font-size: 16px;
+}
+.clock-icon{
+    flex: 0.1;
 }
 .hr-line{
     height: 1px;

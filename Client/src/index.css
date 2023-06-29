@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Overpass&display=swap");
-
+@import 'react-tooltip/dist/react-tooltip.css';
 :root{
   --font-family: "Overpass", Arial, sans;
   --bg-color: #101010;
   --color: #fff;
+  --rt-color-white: #fff;
+  --rt-color-dark: #222;
+  --rt-color-success: #8dc572;
+  --rt-color-error: #be6464;
+  --rt-color-warning: #f0ad4e;
+  --rt-color-info: #337ab7;
+  --rt-opacity: 1;
 }
 
 
