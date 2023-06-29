@@ -1,6 +1,5 @@
 .song-list {
-  padding: 10px;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), #000);
+  background: #1a1a17a0;
   margin-bottom: 10px;
 }
 .song-listing-top {
@@ -20,10 +19,10 @@
 .song-heading {
   position: sticky;
   z-index: 9999;
-  top: 60px;
+  top: 70px;
   padding: 10px;
   display: flex;
-  background: #313133;
+  background: #1a1a17;
   border-bottom: solid 0.5px #c3c4c6;
 }
 .song-heading span {

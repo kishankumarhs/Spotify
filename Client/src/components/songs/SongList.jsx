@@ -1,7 +1,28 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './songListing.css'
 import { ClockCircleOutlined, PlayCircleFilled, HeartOutlined, EllipsisOutlined, CaretRightOutlined } from '@ant-design/icons'
 const SongList = () => {
+
+    useEffect(() => {
+        const handleScroll = () => {
+            var songListTop = document.querySelector('.song-listing-top');
+            if (songListTop) {
+                var top = songListTop.getBoundingClientRect().top
+                if (top <= 75) {
+                    dispatchEvent(new Event("reached_top"))
+                } else {
+                    dispatchEvent(new Event("removed_top"))
+                }
+            }
+        }
+        const main = document.querySelector(".main")
+        if (main) {
+            main.addEventListener('scroll', handleScroll)
+        }
+
+        return () => main && main.removeEventListener('scroll', handleScroll)
+    }, [])
+
     return (
         <div className="song-list">
             <div className="song-listing-top">
