@@ -1,9 +1,31 @@
-import { PlayCircleFilled,HeartOutlined ,EllipsisOutlined, ClockCircleOutlined} from "@ant-design/icons"
+import { PlayCircleFilled,HeartOutlined ,EllipsisOutlined, ClockCircleOutlined, ConsoleSqlOutlined} from "@ant-design/icons"
 import { Tooltip } from 'react-tooltip'
+import { useEffect } from "react"
 import AlbumCard from "../components/home/AlbumCard"
 import "./songDetails.css"
 
 const SongDetails = () => {
+
+    useEffect(()  => {
+        const handleScroll = () =>{
+            var songListTop = document.querySelector(".playlist-icons-container")
+                if (songListTop){
+                    var top = songListTop.getBoundingClientRect().top
+                    if (top <= 75){
+                        console.log("scrolling...")
+                        dispatchEvent(new Event("reached_top"))
+                    }else{
+                        dispatchEvent(new Event("removed_top"))
+                    }
+                }
+            }
+                const main = document.querySelector(".main")
+                if (main){
+                    main.addEventListener("scroll", handleScroll)
+                }
+                return () => main&& main.removeEventListener("scroll", handleScroll)
+        
+    }, [])
     return(
         <div className="play-list-container">
             <div className="playlist-head-container">

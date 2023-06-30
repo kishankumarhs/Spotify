@@ -18,12 +18,15 @@
     width: inherit;
     top: 0;
     display: flex;
-    background: rgba(18, 18, 18, 0.8);
-    justify-content: space-between;
     align-items: center;
     padding: 10px;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-        
+    background: #121212cc;
+    transition: background 0.1s linear;
+    -webkit-transition: background 0.1s linear;
+    -moz-transition: background 0.1s linear;
+    -ms-transition: background 0.1s linear;
+    -o-transition: background 0.1s linear;
 }
 .navigation-arrows{
     display: flex;
@@ -58,6 +61,20 @@
     font-weight: 600;
     cursor: pointer;
 
+}
+.buttons-container {
+    margin-left: auto;
+  }
+.playlist-play-icon1{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin: 0 10px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
 .buttons-container button:hover{
     transform: scale(1.1);

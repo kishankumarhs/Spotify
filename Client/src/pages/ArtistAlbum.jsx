@@ -1,4 +1,5 @@
 import { PlayCircleFilled,HeartOutlined ,EllipsisOutlined} from "@ant-design/icons"
+import ArtistAlbumCard from "../components/home/ArtistAlbumCard"
 import { Tooltip } from 'react-tooltip'
 
 
@@ -56,6 +57,32 @@ const ArtistAlbum = () => {
                         </Tooltip> 
                         
                     </div>
+                </div>
+                <div className="artist-album-signup-login-container">
+                    <p>Sign in to see lyrics and listen to the full track</p>
+                    <div className="lyrics-signup-and-login">
+                        <button className="lyrics-login-btn">Log in</button>
+                        <button className="lyrics-signup-btn">Sign up</button>
+                    </div>
+                </div>
+                <div className="album-artist-image-and-info">
+                    <div className="album-artist-img">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02c1f1b784f7ef6ad1fd13e581" alt="" />
+                    </div>
+                    
+                    <div className="album-artist-info">
+                        <p>Artist</p>
+                        <p className="artist-name">Janet Redger</p>
+                    </div>
+                </div>
+                <div className="popular-tracks-of-artist">
+                    <p>Popular Tracks by</p>
+                    <h1>Janet Redger</h1>
+                </div>
+                <div className="album-card-container">
+                        {
+                            [1, 2, 3, 4, 5].map(ele => <ArtistAlbumCard key={ele} />)
+                        }
                 </div>
             </div>
         </div>
