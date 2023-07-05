@@ -58,3 +58,12 @@
 .time {
   color: #dcdbdb;
 }
+
+.song-details.song .song-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.song-details.song .song-title {
+  font-size: 2.3rem;
+}

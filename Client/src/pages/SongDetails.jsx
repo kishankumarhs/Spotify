@@ -5,7 +5,9 @@ import SongHead from '../components/songs/SongHead'
 const SongDetails = () => {
     return (
         <div className="song-details">
-            <SongHead />
+            <SongHead
+                description='Drift away with enthralling instrumentals.'
+            />
             <SongList />
         </div>
     )

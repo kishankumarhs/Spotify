@@ -8,20 +8,23 @@ const Main = () => {
     const [show, setShow] = useState({
         opacity: 0
     })
+    const [title, setTitle] = useState('')
     const [bgColor, setBgColor] = useState({
         background: "#121212cc"
     })
 
     useEffect(() => {
-        const handleReachedEvent = () => {
+        const handleReachedEvent = (event) => {
             setShow({
                 opacity: 1
             })
+            setTitle(event.detail)
             setBgColor({
                 background: "#1a1a17"
             })
         }
         const handleRemovedEvent = () => {
+            setTitle('')
             setShow({
                 opacity: 0,
             })
@@ -56,7 +59,7 @@ const Main = () => {
                             fontSize: 50,
                             color: "#1BD760"
                         }} />
-                    <h1 className="playlist-name">Playlist</h1>
+                    <h1 className="playlist-name">{title}</h1>
                 </div>
                 <div className="buttons-container">
                     <button className="sign-up">sign up</button>

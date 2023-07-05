@@ -6,7 +6,7 @@ const HomePage = lazy(() => import('./pages/Home'))
 const PageLayout = lazy(() => import("./components/global/Layout"))
 const SongListingPage = lazy(() => import("./pages/SongListing"))
 const SongDetailsPage = lazy(() => import('./pages/SongDetails'))
-
+const SongPage = lazy(() => import('./pages/Song'))
 function App() {
   return (
     <Router>
@@ -20,6 +20,7 @@ function App() {
           <Route path='/song-listing' element={<Suspense fallback="Loading..."><SongListingPage /></Suspense>}
           />
           <Route path='/song-details' element={<Suspense fallback="Loading..."><SongDetailsPage /></Suspense>} />
+          <Route path='/song' element={<Suspense fallback="Loading..."><SongPage /></Suspense>} />
         </Route>
       </Routes>
     </Router>

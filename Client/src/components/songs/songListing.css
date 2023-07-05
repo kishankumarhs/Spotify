@@ -20,15 +20,23 @@
   position: sticky;
   z-index: 9999;
   top: 70px;
-  padding: 10px;
+  padding: 10px 20px;
   display: flex;
   background: #1a1a17;
   border-bottom: solid 0.5px #c3c4c6;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 .song-heading span {
   font-size: 14px;
   font-weight: 400;
   color: #c3c4c6;
+}
+.songs-container {
+  padding: 10px 20px;
 }
 .no,
 .sl-no {
@@ -81,6 +89,10 @@
 }
 .song-title-info {
   flex: 0.84;
+}
+.song-title-info p:hover,
+.song-album p:hover {
+  text-decoration: underline;
 }
 .song-name {
   color: #fff;
