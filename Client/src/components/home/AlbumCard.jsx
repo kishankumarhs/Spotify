@@ -7,11 +7,12 @@ import "./albumcard.css"
 const AlbumCard = () => {
     const navigate = useNavigate()
     const [hover, setHover] = useState(false)
+    
     return(
         <div className="album-list-container"
             onMouseEnter={()=> setHover(true)}
             onMouseLeave={() => setHover(false)}
-            onClick={()=> navigate('/artist-album')}>
+           >
             
                 <span className="serial-no">
                 {
@@ -28,12 +29,12 @@ const AlbumCard = () => {
                 </div>
                 
                 <div className="album-title-container">
-                    <p className="album-title-desc">glance out a casement window</p>
-                    <p className="album-author">janet redger</p>
+                    <p className="album-title-desc"  onClick={()=> navigate('/artist-album')}>glance out a casement window</p>
+                    <p className="album-author" onClick={()=> navigate('/author-details')}>janet redger</p>
                 </div>
             </div>
             <div className="album-name">
-                <p>glance out a casement window</p>
+                <p onClick={()=> navigate('/artist-album')}>glance out a casement window</p>
             </div>
             
                 <div className="album-date-added">

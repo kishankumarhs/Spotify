@@ -16,7 +16,7 @@
     cursor: pointer;
 }
 .song-card-image-holder{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -24,7 +24,7 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 .song-card-image-holder img{
     width: 180px;

@@ -1,0 +1,79 @@
+.playlist-head-container{
+    background: linear-gradient(#819caa,#4c5c64);
+}
+.song-details-container{
+    display: flex;
+    padding: 1.3rem;
+}
+.playlist-image{
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    width: 232px;
+    height: 232px;
+    flex: 0.2;
+    min-width: 232px;
+}
+.playlist-image img{
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    width: 100%;
+    height: 100%;
+}
+.play-list-info{
+    padding: 0 1.3rem ;
+
+}
+.playlist-text{
+    margin-top: 1.3rem;
+    font-size: 15px;
+    font-weight: 500;
+}
+.playlist-head{
+    font-family: "Heebo";
+    font-size: 5.5rem;
+    font-weight: 900;
+}
+.palylist-desc{
+    color: #dcdbdb;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 13px 0;
+}
+.likes-and-songs-container{
+    display: flex;
+    column-gap: 5px;
+    font-size: 14px;
+    color: #cac5bb;
+    align-items: center;
+    
+}
+.spotify-logo {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    padding-bottom: 0.3rem;
+  }
+  .spotify-logo img {
+    width: 23px;
+    object-fit: contain;
+    mix-blend-mode: lighten;
+  }
+  .spotify-logo a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    padding-top: 0.2rem;
+  }
+.playlist-likes{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+.playlist-no-of-songs{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+.span-dot{
+    padding-top: 7px;
+    margin: 0px 4px;
+}

@@ -1,20 +1,20 @@
+
+import "./artistalbumcard.css"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { Tooltip } from 'react-tooltip'
 import {HeartOutlined, EllipsisOutlined, CaretRightOutlined} from "@ant-design/icons"
-import "./artistalbumcard.css"
-import "./albumcard.css"
 
-const ArtistAlbumCard = () => {
+const ArtistAlbumCard = ({image,title,count}) => {
     const navigate = useNavigate()
     const [hover, setHover] = useState(false)
-    return(
-        <div className="album-list-container album-list-container2"
+    
+  return (
+    <div className="artist-album-card-container"
             onMouseEnter={()=> setHover(true)}
             onMouseLeave={() => setHover(false)}
             onClick={()=> navigate('/artist-album')}>
-            
-                <span className="serial-no">
+            <span className="artist-album-serial-no">
                 {
                     hover ? <CaretRightOutlined style={{
                         fontSize: 20,
@@ -22,23 +22,23 @@ const ArtistAlbumCard = () => {
                         : "1"
                 }
                 </span>
-                <div className="album-image-and-title" >
-                    <div  className="album-image ">
-                        <img src="https://i.scdn.co/image/ab67616d00004851c1f1b784f7ef6ad1fd13e581" alt=""  className="image2"/>
-                    </div>
-                
-                    <div className="album-title-container">
-                        <p className="album-title-desc desc2">glance out a casement window</p>
-                    
-                    </div>
-                </div>
-                    <p className="count-no">12,34,56,789</p>
-           
-                <div className="album-date-added">
-                    
-                    <div className="hidden-icons">
+        <div className="image-and-album-name-card-container">
+          <div className="artist-album-image-card-container">
+            <img src={image || null} 
+            className="artist-album-card-image" alt=""  cl/>
+          </div>
+          <div  className='artist-album-card-name'>
+            <p className="artist-album-card-name1">glance out a casement window</p>
+            <p  className="artist-album-card-name2">{title || null}</p>
+            
+          </div>
+          
+        </div>
+        <div className="count-no">
+          <p>{count || null}</p>
+              <div className="artist-album-hidden-icons">
                         {hover ? <div>
-                        <a className="my-anchor-element-heart"><HeartOutlined style={{
+                    <a className="my-anchor-element-heart"><HeartOutlined style={{
                             fontSize: 17
                         }} className="album-heart-icon"/> </a>
                     <Tooltip anchorSelect=".my-anchor-element-heart" place="top" tipPointerPosition="middle">
@@ -47,15 +47,11 @@ const ArtistAlbumCard = () => {
                     </div>
                         
                         : null}  
-                    </div>
-                </div>
-                
-            
-            <div className="album-time-container">
-                
-                
-                <p className="album-time">2:50</p>
-                <div className="hidden-ellipsis-icon">
+          </div>
+        </div>
+        <div className="artist-album-song-length">
+          <p>2:50</p>
+            <div className="hidden-ellipsis-icon">
                     {hover ? 
                     <div>
                     <a className="my-anchor-element-ellipsis"><EllipsisOutlined style={{
@@ -69,11 +65,9 @@ const ArtistAlbumCard = () => {
                     : null}
                     
                 </div>
-                
-            </div>
-            
         </div>
-    )
+    </div>
+  )
 }
 
 export default ArtistAlbumCard

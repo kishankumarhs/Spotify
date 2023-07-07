@@ -8,27 +8,30 @@ const Main = () => {
     const [show ,setShow] = useState({
         opacity: 0
     })
-
+    const [title, setTitle] = useState('')
     const [bgColor , setBgColor] = useState({
         background: "#121212cc"
     })
 
     useEffect(()=> {
-        const handleReachedEvent = () => {
+        const handleReachedEvent = (event) => {
             setShow({
                 opacity: 1
             })
             setBgColor({
                 background :"#1a1a17"
             })
+            setTitle(event.detail)
         }
         const handleRemovedEvent = () => {
+            setTitle('')
             setShow({
                 opacity: 0
             })
             setBgColor({
                 background :"#121212cc"
             })
+            
         }
 
         window.addEventListener("reached_top", handleReachedEvent)
@@ -54,7 +57,7 @@ const Main = () => {
                             color: "#1BD760"
 
                             }}/>
-                        <h1>Playlist</h1>
+                        <h1>{title}</h1>
                     </div>
                 <div className="buttons-container">
                     

@@ -1,10 +1,62 @@
-.image2{
-    height: 50px;
-    width: 50px;
+.artist-album-card-container{
+    display: flex;
+    font-weight: 400;
+    padding-left: 0.5rem;
+    text-transform: capitalize;
+    font-size: 15px;
+    cursor: pointer;
+    align-items: center;
+    padding: 0.5rem;
+    padding-right: 0;
+    margin-left: 1rem;
+    height: 38px;
 }
+.artist-album-card-container:hover{
+    background: #2a2a2a;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.artist-album-serial-no{
+    flex: 0.025;
+}
+.image-and-album-name-card-container{
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    flex: 0.7;
+    
+}
+.artist-album-image-card-container{
+    display: grid;
+    place-items: center;
+    flex: 0.16;
+}
+.artist-album-card-image{
+    width: 55%;
+    object-fit: contain;
+}
+
 .count-no{
-    margin-left: 15rem;
+    flex: 0.4;
+    color: #c3c4c6;
+    display: flex;
+    
 }
-.album-list-container2{
-    padding: 0px;
+.artist-album-hidden-icons{
+    margin-left: auto;
+    margin-right: 6%;
+}
+.artist-album-song-length{
+    display: flex;
+    color: #c3c4c6;
+    flex: 0.1;
+    column-gap: 15px;
+}
+.artist-album-card-name1:hover,
+.artist-album-card-name2:hover{
+    text-decoration: underline;
 }

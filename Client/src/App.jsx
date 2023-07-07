@@ -7,6 +7,7 @@ const PageLayout = lazy(() => import("./components/global/Layout"))
 const SongListingPage = lazy(() => import("./pages/SongListing"))
 const SongDetailsPage = lazy(() => import("./pages/SongDetails"))
 const ArtistAlbumPage = lazy(() => import("./pages/ArtistAlbum"))
+const AuthorDetailsPage = lazy(() => import("./pages/AuthorDetails"))
 function App() {
   return (
     <Router>
@@ -16,6 +17,7 @@ function App() {
           <Route path='/song-listing' element={<Suspense><SongListingPage /></Suspense>} />
           <Route path='/song-details' element={<Suspense><SongDetailsPage /></Suspense>} />
           <Route path='/artist-album' element={<Suspense><ArtistAlbumPage /></Suspense>} />
+          <Route path='/author-details' element={<Suspense><AuthorDetailsPage /></Suspense>} />
         </Route>
       </Routes>
     </Router>
